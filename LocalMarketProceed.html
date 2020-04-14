@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Checkout</title>
+		<link rel="stylesheet" type="text/css" href="proced.css">
+		<script src="LocalMarket.js"></script>
+	</head>
+	<body>
+    <header>
+    	<p>Logo</p>
+    	<p>100% Genuine Products</p>
+    </header>
+    <div class="main-container">
+    	<div class="container-for-cart-details">
+    		<p><span class="process-number-one">1</span> <span class="phone-number ">Phone Number</span></p>
+    		<div class="phone-number-verification-details">
+	    		<p class="phone-number-update-for-details">We need your phone number so that we can update you about your order.</p>
+	    		<p class="phone-number-update-for-details">Your 10 digit mobile number</p>
+	    		<input type="number" name="phone number" placeholder="Enter your mobile number" class="input-type-number" id="phoneNumber" onBlur="validationForMobileNumber()">
+	    		<button class="btn-next" id="next" onClick="viewTheAddress()">Next</button>
+	    		<p id="demo"></p>
+	    	</div>
+    	</div>
+    	<div class="container-for-cart-details">
+    		<p><span class="process-number-one">2</span> <span class="phone-number ">Delivery Address</span></p>
+    		<div class="address" id="addressBlock">
+	    		<form class="name-and-address-form-margin">
+	    			<label class="enter-your-name">Area / Locality</label>
+	    			<input type="text" name="Address" placeholder="Eg: Chowdasawari nagar, Ngpalli, mpl" class="address-input-section" onBlur="adressVerification()" id="addresss">
+	    			<p id="addressText"></p>
+	    		</form>
+	    		<button class="btn-next-for-address" onClick="viewThePaymentMode()" id="opacity">Next</button>
+	    	</div>
+    	</div>
+    	<div class="container-for-cart-details">
+    		<p><span class="process-number-one">3</span> <span class="phone-number ">Payment Mode</span></p>
+    		<ul class="cashMethod" id="paymentMode">
+    			<li>Cash On Delivary (COD)</li>
+    		  <p>Thanks for placing the order</p>
+    		</ul>
+    	</div>
+    </div>
+	</body>
+</html>
